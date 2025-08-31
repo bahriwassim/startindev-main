@@ -1,0 +1,67 @@
+Crée un projet React + Tailwind moderne avec les pages suivantes :
+
+1. Landing Hub StartInDev Groupe
+   - Style graphique identique au site https://startindev.com (même charte couleur, typographie, minimalisme).
+   - Hero section : logo + titre "StartInDev Groupe" + sous-titre "Des solutions digitales sur mesure pour vos univers".
+   - Section 3 cartes (grid responsive) :
+     a) Hospitality
+        - Image hôtel moderne
+        - Titre : "Hospitality"
+        - Texte : "Boostez vos réservations directes et réduisez vos coûts OTA"
+        - CTA bouton : "Découvrir" → redirection vers https://startindev.com
+     b) E-Commerce
+        - Image boutique en ligne
+        - Titre : "E-Commerce"
+        - Texte : "Créez une expérience e-commerce qui convertit"
+        - CTA bouton : "Explorer" → redirection vers /ecommerce
+     c) Entertainment
+        - Image événement (festival, concert, corporate)
+        - Titre : "Entertainment"
+        - Texte : "Des solutions digitales pour vos événements et expériences"
+        - CTA bouton : "Entrer" → redirection vers /entertainment
+   - Footer : Mentions légales, copyright, réseaux sociaux.
+
+2. Homepage E-Commerce (/ecommerce)
+   - Hero : visuel boutique en ligne + slogan "Votre boutique en ligne qui convertit".
+   - 3 piliers section : "Design sur mesure" | "Performance rapide" | "Conversion optimisée".
+   - Section solutions (grid de cartes) :
+       • Développement sur Shopify / WooCommerce / Prestashop
+       • Optimisation UX & taux de conversion
+       • SEO / SEA pour e-commerce
+       • Automatisation marketing (CRM, emailing)
+   - Fonctionnalités clés (icônes + texte) :
+       • Gestion catalogue et stock
+       • Paiements sécurisés
+       • Multi-langue / Multi-devise
+       • Intégrations marketplaces
+   - Portfolio (3 cas clients avec stats)
+   - CTA section finale : "Lancez votre e-commerce avec StartInDev Groupe"
+   - Footer cohérent.
+
+3. Homepage Entertainment (/entertainment)
+   - Hero : vidéo/image immersive d’un événement + slogan "Le digital au service de vos événements".
+   - 3 piliers section : "Créativité" | "Technologie" | "Expérience".
+   - Section solutions (grid de cartes) :
+       • Sites événementiels (billetterie, programme interactif)
+       • Gestion billetterie & paiements
+       • Streaming live & hybrid events
+       • Expériences immersives AR/VR
+   - Fonctionnalités clés (icônes + texte) :
+       • Inscription en ligne & gestion participants
+       • QR codes & check-in
+       • Statistiques en temps réel
+       • Intégration réseaux sociaux
+   - Portfolio (3 projets : festival, conférence, corporate)
+   - CTA section finale : "Digitalisez vos événements avec StartInDev Groupe"
+   - Footer cohérent.
+
+4. Design & technique
+   - Framework : React + TailwindCSS.
+   - Responsive mobile-first.
+   - Animations : hover zoom sur cartes, fade-in des sections, transitions fluides.
+   - Accessibilité : alt pour les images, contrastes respectés.
+   - Images : placeholders en attendant vraies images.
+   - Boutons arrondis (rounded-2xl) avec ombres douces.
+   - Performance optimisée (lazy loading images, WebP si possible).
+
+Objectif final : un projet React complet avec 3 pages (Landing hub, E-Commerce, Entertainment) respectant la même charte StartInDev.
