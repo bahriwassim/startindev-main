@@ -1,60 +1,373 @@
+import { Search, Target, TrendingUp, BarChart3, Globe, Zap, CheckCircle, ArrowRight, Users, ShoppingCart, DollarSign, LineChart, Briefcase, Award, Lightbulb, Star, Eye } from "lucide-react";
 import logo from "../../../../attached_assets/startindev-group.png";
 
 export default function EBusinessStrategy() {
   return (
-    <div className="min-h-screen">
-      <div className="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-border/50 z-40 shadow-sm">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
+      {/* Navigation - Creative Style */}
+      <div className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-orange-200/50 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-12 text-sm overflow-x-auto">
-            <a href="/" className="mr-4 flex items-center">
-              <img src={logo} alt="StartInDev" className="h-6 w-auto" />
+          <div className="flex items-center h-16 text-sm">
+            <a href="/" className="mr-6 flex items-center">
+              <img src={logo} alt="StartInDev" className="h-8 w-auto" />
             </a>
-            <a href="/ebusiness" className="px-3 py-2 text-muted-foreground hover:text-primary transition-colors">Aperçu</a>
-            <a href="/ebusiness/strategie" className="px-3 py-2 text-primary font-semibold">Stratégie</a>
-            <a href="/ebusiness/contenu" className="px-3 py-2 text-muted-foreground hover:text-primary transition-colors">Contenu</a>
-            <a href="/ebusiness/tech" className="px-3 py-2 text-muted-foreground hover:text-primary transition-colors">Tech</a>
+            <a href="/ebusiness" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Aperçu</a>
+            <a href="/ebusiness/strategie" className="px-4 py-2 text-orange-600 font-bold border-b-3 border-orange-500">Stratégie Marketing</a>
+            <a href="/ebusiness/contenu" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Création Contenu</a>
+            <a href="/ebusiness/tech" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Solutions Tech</a>
+            <a href="/ebusiness/contact" className="ml-auto px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium">Contact</a>
           </div>
         </div>
       </div>
-      <section className="hero-gradient pt-28 pb-16 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Stratégie Marketing</h1>
-              <p className="text-xl opacity-95 max-w-2xl">Publicité en ligne, optimisation Amazon et SEO e‑commerce pour accélérer vos ventes.</p>
+
+      {/* Hero Section - Creative Asymmetric Layout */}
+      <section className="relative pt-28 pb-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-orange-200 to-pink-200 rounded-full blur-3xl opacity-30"></div>
+          <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-br from-purple-200 to-orange-200 rounded-full blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-5 gap-12 items-center">
+            <div className="lg:col-span-3 space-y-8">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                  <Target className="text-white" size={24} />
+                </div>
+                <div className="px-4 py-2 bg-orange-100 rounded-full">
+                  <span className="text-orange-700 font-semibold text-sm">Stratégie Marketing Pro</span>
+                </div>
+              </div>
+              
+              <h1 className="text-5xl lg:text-6xl font-black leading-tight">
+                <span className="text-slate-900">Stratégie Marketing</span>
+                <br />
+                <span className="text-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text">
+                  Data-Driven
+                </span>
+              </h1>
+              
+              <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
+                Accélérez votre croissance avec des campagnes publicitaires intelligentes, une optimisation marketplace avancée et un référencement e-commerce qui convertit.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-orange-200">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-slate-700">ROAS garanti 4x</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-pink-200">
+                  <Zap size={14} className="text-orange-500" />
+                  <span className="text-sm font-medium text-slate-700">Setup en 48h</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-purple-200">
+                  <Star size={14} className="text-pink-500" />
+                  <span className="text-sm font-medium text-slate-700">Expertise certifiée</span>
+                </div>
+              </div>
             </div>
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop" alt="Marketing strategy" className="rounded-2xl shadow-2xl" />
+
+            <div className="lg:col-span-2">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-orange-300 to-pink-300 rounded-3xl blur-2xl opacity-20"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Stratégie marketing" 
+                  className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-xl border border-orange-100">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-500 rounded-lg flex items-center justify-center">
+                      <TrendingUp className="text-white" size={16} />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-slate-900">+320%</div>
+                      <div className="text-xs text-slate-500">Croissance CA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-            <h3 className="text-xl font-bold mb-2">Publicité en ligne</h3>
-            <p className="text-muted-foreground mb-4">Campagnes Google Ads et Facebook/Instagram Ads orientées ROAS.</p>
-            <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-4">
-              <li>Structuration des comptes et audiences</li>
-              <li>Création d'annonces et A/B testing</li>
-              <li>Optimisation budgets et enchères</li>
-            </ul>
+
+      {/* Marketing Services Showcase */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-100 to-pink-100 px-6 py-3 rounded-2xl mb-8">
+              <Target className="text-orange-600" size={20} />
+              <span className="text-orange-700 font-bold text-sm">Solutions Marketing</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+              Expertise Data-Driven
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Optimisez chaque canal d'acquisition avec des stratégies basées sur la data et des outils d'analyse avancés
+            </p>
           </div>
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-            <h3 className="text-xl font-bold mb-2">Optimisation Amazon</h3>
-            <p className="text-muted-foreground mb-4">Maximisez la visibilité et les ventes sur Amazon.</p>
-            <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-4">
-              <li>Fiches produits (titres, images, A+)</li>
-              <li>SEO Amazon (mots‑clés, catégories)</li>
-              <li>Publicité sponsorisée et reporting</li>
-            </ul>
+
+          {/* Creative Grid Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20">
+            {/* Google Ads Section */}
+            <div className="lg:col-span-7">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8 lg:p-12 h-full">
+                <div className="flex items-start justify-between mb-8">
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+                        <Target className="text-white" size={24} />
+                      </div>
+                      <div className="bg-orange-200 text-orange-800 px-4 py-2 rounded-full text-sm font-bold">
+                        Acquisition Payante
+                      </div>
+                    </div>
+                    <h3 className="text-3xl font-bold text-slate-900 mb-4">Google & Meta Ads</h3>
+                    <p className="text-lg text-slate-700 mb-8">
+                      Campagnes multi-canaux avec ciblage comportemental avancé et optimisation algorithmique temps réel
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="space-y-4">
+                    <h4 className="font-bold text-slate-800 flex items-center gap-2">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      Google Ads Pro
+                    </h4>
+                    <div className="space-y-3 text-sm text-slate-600">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Search, Shopping & Performance Max</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Smart Bidding & Attribution</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Lookalike Audiences avancées</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <h4 className="font-bold text-slate-800 flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pink-500 rounded-full"></div>
+                      Meta Business Suite
+                    </h4>
+                    <div className="space-y-3 text-sm text-slate-600">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Catalog & Dynamic Product Ads</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Conversion API & iOS 14.5+</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Creative Testing automatisé</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-200">
+                  <div className="grid grid-cols-3 gap-6 text-center">
+                    <div>
+                      <div className="text-2xl font-bold text-orange-600 mb-1">4.2x</div>
+                      <div className="text-sm text-slate-600">ROAS Moyen</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-600 mb-1">-35%</div>
+                      <div className="text-sm text-slate-600">Réduction CPC</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-600 mb-1">48h</div>
+                      <div className="text-sm text-slate-600">Setup campagnes</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Amazon Section */}
+            <div className="lg:col-span-5">
+              <div className="bg-gradient-to-br from-pink-50 to-purple-100 rounded-3xl p-8 h-full">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                    <ShoppingCart className="text-white" size={20} />
+                  </div>
+                  <div className="bg-pink-200 text-pink-800 px-3 py-2 rounded-full text-sm font-bold">
+                    Amazon Marketplace
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">E-commerce & PPC</h3>
+                <p className="text-slate-700 mb-8">
+                  Maximisation visibilité produits et optimisation conversions avec expertise algorithme Amazon A10
+                </p>
+
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-bold text-slate-800 mb-3 flex items-center gap-2">
+                      <ShoppingCart className="text-pink-500" size={16} />
+                      Optimisation Marketplace
+                    </h4>
+                    <div className="space-y-2 text-sm text-slate-600">
+                      <div>• SEO Amazon & Keyword Research</div>
+                      <div>• A+ Content & Brand Store</div>
+                      <div>• Sponsored Products & Brands</div>
+                      <div>• ACoS & TACoS Optimization</div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-pink-200">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-slate-600">Croissance ventes</span>
+                      <span className="font-bold text-pink-600">+180%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-            <h3 className="text-xl font-bold mb-2">SEO e‑commerce</h3>
-            <p className="text-muted-foreground mb-4">Améliorez le trafic organique et la conversion.</p>
-            <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-4">
-              <li>Audit technique et performance</li>
-              <li>Optimisation catégories et produits</li>
-              <li>Netlinking et contenus sémantiques</li>
-            </ul>
+
+          {/* SEO Section */}
+          <div className="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-3xl p-8 lg:p-12">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                    <Search className="text-white" size={24} />
+                  </div>
+                  <div className="bg-purple-200 text-purple-800 px-4 py-2 rounded-full text-sm font-bold">
+                    SEO E-commerce
+                  </div>
+                </div>
+
+                <h3 className="text-3xl font-bold text-slate-900 mb-6">Référencement Naturel</h3>
+                <p className="text-lg text-slate-700 mb-8">
+                  Architecture SEO technique avancée avec optimisation Core Web Vitals et stratégie de contenu orientée conversion
+                </p>
+
+                <div className="grid grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="font-bold text-slate-800 mb-4">SEO Technique</h4>
+                    <div className="space-y-3 text-sm text-slate-600">
+                      <div className="flex items-center gap-2">
+                        <Search className="text-purple-500" size={16} />
+                        <span>Schema Markup E-commerce</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Zap className="text-pink-500" size={16} />
+                        <span>Core Web Vitals Optimization</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Globe className="text-purple-500" size={16} />
+                        <span>International SEO (hreflang)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-800 mb-4">Contenu & Liens</h4>
+                    <div className="space-y-3 text-sm text-slate-600">
+                      <div className="flex items-center gap-2">
+                        <Lightbulb className="text-orange-500" size={16} />
+                        <span>Content Strategy avancée</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Star className="text-pink-500" size={16} />
+                        <span>Digital PR & Brand Mentions</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Eye className="text-purple-500" size={16} />
+                        <span>Topic Authority Building</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-purple-200">
+                <h4 className="font-bold text-slate-800 mb-6 text-center">Performance SEO</h4>
+                <div className="grid grid-cols-2 gap-6 text-center">
+                  <div>
+                    <div className="text-3xl font-bold text-purple-600 mb-2">+250%</div>
+                    <div className="text-sm text-slate-600">Trafic organique</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-pink-600 mb-2">Top 3</div>
+                    <div className="text-sm text-slate-600">Position moyenne</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-orange-600 mb-2">85%</div>
+                    <div className="text-sm text-slate-600">Keywords top 10</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-purple-600 mb-2">6 mois</div>
+                    <div className="text-sm text-slate-600">Délai résultats</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* CTA Section - Creative Style */}
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-600 via-pink-600 to-purple-700"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-10 right-10 w-96 h-96 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-full blur-3xl opacity-20"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-gradient-to-br from-pink-300 to-purple-400 rounded-full blur-3xl opacity-20"></div>
+        </div>
+        
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-3 rounded-2xl mb-8">
+            <Target className="text-white" size={20} />
+            <span className="font-bold text-sm">Stratégie Marketing</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
+            Prêt à Multiplier
+            <br />
+            <span className="text-transparent bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text">
+              Votre ROI ?
+            </span>
+          </h2>
+          
+          <p className="text-xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
+            Obtenez une analyse personnalisée de votre potentiel de croissance et un plan d'action sur mesure pour transformer vos performances marketing.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <a href="/ebusiness/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 font-bold rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200">
+              <BarChart3 className="mr-3" size={20} />
+              Audit Marketing Gratuit
+              <ArrowRight className="ml-3" size={20} />
+            </a>
+            <a href="https://startindev.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 backdrop-blur-sm text-white font-bold rounded-2xl hover:bg-white/10 transition-all duration-200">
+              <Eye className="mr-3" size={20} />
+              Voir Nos Cas Clients
+            </a>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-6 text-sm opacity-80">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span>Analyse incluse 7j/7</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Zap size={14} />
+              <span>Réponse sous 48h</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Star size={14} />
+              <span>Sans engagement</span>
+            </div>
           </div>
         </div>
       </section>

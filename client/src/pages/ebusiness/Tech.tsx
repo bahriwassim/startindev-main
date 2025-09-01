@@ -1,45 +1,513 @@
+import { Code2, Smartphone, Zap, Server, Database, Shield, CheckCircle, ArrowRight, Monitor, Layers, Cloud, Gauge, Terminal, Cpu, HardDrive, GitBranch, Rocket, Lock } from "lucide-react";
 import logo from "../../../../attached_assets/startindev-group.png";
 
 export default function EBusinessTech() {
   return (
-    <div className="min-h-screen">
-      <div className="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-border/50 z-40 shadow-sm">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
+      {/* Navigation - Creative Style */}
+      <div className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-orange-200/50 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-12 text-sm overflow-x-auto">
-            <a href="/" className="mr-4 flex items-center">
-              <img src={logo} alt="StartInDev" className="h-6 w-auto" />
+          <div className="flex items-center h-16 text-sm">
+            <a href="/" className="mr-6 flex items-center">
+              <img src={logo} alt="StartInDev" className="h-8 w-auto" />
             </a>
-            <a href="/ebusiness" className="px-3 py-2 text-muted-foreground hover:text-primary transition-colors">Aperçu</a>
-            <a href="/ebusiness/strategie" className="px-3 py-2 text-muted-foreground hover:text-primary transition-colors">Stratégie</a>
-            <a href="/ebusiness/contenu" className="px-3 py-2 text-muted-foreground hover:text-primary transition-colors">Contenu</a>
-            <a href="/ebusiness/tech" className="px-3 py-2 text-primary font-semibold">Tech</a>
+            <a href="/ebusiness" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Aperçu</a>
+            <a href="/ebusiness/strategie" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Stratégie Marketing</a>
+            <a href="/ebusiness/contenu" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Création Contenu</a>
+            <a href="/ebusiness/tech" className="px-4 py-2 text-orange-600 font-bold border-b-3 border-orange-500">Solutions Tech</a>
+            <a href="/ebusiness/contact" className="ml-auto px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium">Contact</a>
           </div>
         </div>
       </div>
-      <section className="hero-gradient pt-28 pb-16 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Solutions Techniques</h1>
-              <p className="text-xl opacity-95 max-w-2xl">Sites e‑commerce sur mesure, landing pages et pages de vente optimisées.</p>
+
+      {/* Hero Section - Creative Asymmetric Layout */}
+      <section className="relative pt-28 pb-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-orange-200 to-pink-200 rounded-full blur-3xl opacity-30"></div>
+          <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-br from-purple-200 to-orange-200 rounded-full blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-5 gap-12 items-center">
+            <div className="lg:col-span-3 space-y-8">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                  <Code2 className="text-white" size={24} />
+                </div>
+                <div className="px-4 py-2 bg-orange-100 rounded-full">
+                  <span className="text-orange-700 font-semibold text-sm">Solutions Tech Pro</span>
+                </div>
+              </div>
+              
+              <h1 className="text-5xl lg:text-6xl font-black leading-tight">
+                <span className="text-slate-900">Développement</span>
+                <br />
+                <span className="text-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text">
+                  E-commerce
+                </span>
+              </h1>
+              
+              <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
+                Architecture technique moderne, développement full-stack et infrastructure cloud scalable pour des plateformes e-commerce haute performance.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-orange-200">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-slate-700">99.99% uptime</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-pink-200">
+                  <Zap size={14} className="text-orange-500" />
+                  <span className="text-sm font-medium text-slate-700">Performance maximale</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-purple-200">
+                  <Shield size={14} className="text-pink-500" />
+                  <span className="text-sm font-medium text-slate-700">Sécurisé SSL</span>
+                </div>
+              </div>
             </div>
-            <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1200&auto=format&fit=crop" alt="E-commerce tech" className="rounded-2xl shadow-2xl" />
+
+            <div className="lg:col-span-2">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-orange-300 to-pink-300 rounded-3xl blur-2xl opacity-20"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Développement tech" 
+                  className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-xl border border-orange-100">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-500 rounded-lg flex items-center justify-center">
+                      <Rocket className="text-white" size={16} />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-slate-900">+340%</div>
+                      <div className="text-xs text-slate-500">Performance boost</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-            <h3 className="text-xl font-bold mb-2">Sites e‑commerce</h3>
-            <p className="text-muted-foreground mb-4">Développements sur mesure orientés performance et conversion.</p>
+
+      {/* Technical Architecture Showcase */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-100 to-pink-100 px-6 py-3 rounded-2xl mb-8">
+              <Code2 className="text-orange-600" size={20} />
+              <span className="text-orange-700 font-bold text-sm">Stack Technologique</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+              Architecture Moderne
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Développement full-stack avec les technologies de pointe pour une performance optimale
+            </p>
           </div>
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-            <h3 className="text-xl font-bold mb-2">Landing pages</h3>
-            <p className="text-muted-foreground mb-4">Pages de vente A/B testées et optimisées SEO.</p>
+
+          <div className="grid lg:grid-cols-12 gap-8">
+            {/* Frontend Development */}
+            <div className="lg:col-span-4">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8 lg:p-12 h-full">
+                <div className="flex items-start justify-between mb-8">
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+                        <Monitor className="text-white" size={24} />
+                      </div>
+                      <div className="bg-orange-200 text-orange-800 px-4 py-2 rounded-full text-sm font-bold">
+                        Frontend Pro
+                      </div>
+                    </div>
+                    <h3 className="text-3xl font-bold text-slate-900 mb-4">Interface Utilisateur</h3>
+                    <p className="text-lg text-slate-700 mb-8">
+                      Technologies React modernes pour des interfaces utilisateur fluides et performantes
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="space-y-4">
+                    <h4 className="font-bold text-slate-800 flex items-center gap-2">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      Technologies Core
+                    </h4>
+                    <div className="space-y-3 text-sm text-slate-600">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>React 18 + TypeScript</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Next.js App Router</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Tailwind CSS + Framer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <h4 className="font-bold text-slate-800 flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pink-500 rounded-full"></div>
+                      Performance
+                    </h4>
+                    <div className="space-y-3 text-sm text-slate-600">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>PWA + Service Workers</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Optimisation automatique</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="text-green-500" size={16} />
+                        <span>Bundle splitting intelligent</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-200">
+                  <div className="grid grid-cols-3 gap-6 text-center">
+                    <div>
+                      <div className="text-2xl font-bold text-orange-600 mb-1">98</div>
+                      <div className="text-sm text-slate-600">Lighthouse Score</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-600 mb-1">&lt; 250kb</div>
+                      <div className="text-sm text-slate-600">Bundle Size</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-600 mb-1">&lt; 2s</div>
+                      <div className="text-sm text-slate-600">Load Time</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Backend Development */}
+            <div className="lg:col-span-4">
+              <div className="bg-gradient-to-br from-pink-50 to-purple-100 rounded-3xl p-8 h-full">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                    <Server className="text-white" size={20} />
+                  </div>
+                  <div className="bg-pink-200 text-pink-800 px-3 py-2 rounded-full text-sm font-bold">
+                    Backend Pro
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">API & Services</h3>
+                <p className="text-slate-700 mb-8">
+                  Architecture backend scalable avec Node.js et microservices pour une performance optimale
+                </p>
+
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-bold text-slate-800 mb-3 flex items-center gap-2">
+                      <Database className="text-pink-500" size={16} />
+                      Architecture API
+                    </h4>
+                    <div className="space-y-2 text-sm text-slate-600">
+                      <div>• Node.js + Express robuste</div>
+                      <div>• GraphQL + REST API</div>
+                      <div>• JWT Authentication sécurisée</div>
+                      <div>• Rate Limiting + CORS</div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-pink-200">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-slate-600">Performance API</span>
+                      <span className="font-bold text-pink-600">&lt; 100ms</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Infrastructure & Database */}
+            <div className="lg:col-span-4">
+              <div className="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-3xl p-8 lg:p-12">
+                <div className="grid lg:grid-cols-1 gap-12 items-center">
+                  <div>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                        <Database className="text-white" size={24} />
+                      </div>
+                      <div className="bg-purple-200 text-purple-800 px-4 py-2 rounded-full text-sm font-bold">
+                        Infrastructure
+                      </div>
+                    </div>
+
+                    <h3 className="text-3xl font-bold text-slate-900 mb-6">Cloud & Base de Données</h3>
+                    <p className="text-lg text-slate-700 mb-8">
+                      Infrastructure cloud moderne avec bases de données performantes et cache distribué
+                    </p>
+
+                    <div className="grid grid-cols-2 gap-8">
+                      <div>
+                        <h4 className="font-bold text-slate-800 mb-4">Technologies Cloud</h4>
+                        <div className="space-y-3 text-sm text-slate-600">
+                          <div className="flex items-center gap-2">
+                            <Cloud className="text-purple-500" size={16} />
+                            <span>AWS / Google Cloud</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Layers className="text-pink-500" size={16} />
+                            <span>Docker + Kubernetes</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Server className="text-purple-500" size={16} />
+                            <span>CDN + Edge Cache</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-800 mb-4">Base de Données</h4>
+                        <div className="space-y-3 text-sm text-slate-600">
+                          <div className="flex items-center gap-2">
+                            <Database className="text-orange-500" size={16} />
+                            <span>PostgreSQL + Redis</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Shield className="text-pink-500" size={16} />
+                            <span>Auto Scaling</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <HardDrive className="text-purple-500" size={16} />
+                            <span>Backup temps réel</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-purple-200">
+                    <h4 className="font-bold text-slate-800 mb-6 text-center">Performance Infrastructure</h4>
+                    <div className="grid grid-cols-2 gap-6 text-center">
+                      <div>
+                        <div className="text-3xl font-bold text-purple-600 mb-2">99.99%</div>
+                        <div className="text-sm text-slate-600">Uptime SLA</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold text-pink-600 mb-2">24/7</div>
+                        <div className="text-sm text-slate-600">Monitoring</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-            <h3 className="text-xl font-bold mb-2">Intégrations</h3>
-            <p className="text-muted-foreground mb-4">Paiements, marketplaces, ERP/CRM et analytics.</p>
+
+        </div>
+      </section>
+
+      {/* Technology Stack Section */}
+      <section className="py-24 bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-100 to-pink-100 px-6 py-3 rounded-2xl mb-8">
+              <Layers className="text-orange-600" size={20} />
+              <span className="text-orange-700 font-bold text-sm">Stack Technologique</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+              Technologies Modernes
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Technologies de production prêtes pour l'excellence e-commerce
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Development Tools */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-orange-200 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                  <Code2 className="text-white" size={28} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900">Frontend Suite</h3>
+                  <p className="text-orange-600 text-sm font-semibold">React & UI/UX</p>
+                </div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">React 18 + TypeScript</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">Next.js App Router</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">Tailwind CSS + Framer</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">PWA + Service Workers</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">Performance optimisée</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Backend & Infrastructure */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-pink-200 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                  <Server className="text-white" size={28} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900">Backend Suite</h3>
+                  <p className="text-pink-600 text-sm font-semibold">Server & Database</p>
+                </div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">Node.js v20 LTS</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">PostgreSQL + Redis</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">Docker + Kubernetes</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">Microservices</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0" size={18} />
+                  <span className="text-slate-700">API GraphQL + REST</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Development Process Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-100 to-pink-100 px-6 py-3 rounded-2xl mb-8">
+              <GitBranch className="text-orange-600" size={20} />
+              <span className="text-orange-700 font-bold text-sm">Processus Agile</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+              Méthodologie DevOps
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Approche agile avec intégration et déploiement continus pour une livraison optimale
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Layers className="text-white" size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-4">1. Analyse</h3>
+              <p className="text-slate-600">Audit des besoins techniques et conception de l'architecture</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Code2 className="text-white" size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-4">2. Développement</h3>
+              <p className="text-slate-600">Sprints agiles avec développement des composants et API</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Gauge className="text-white" size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-4">3. Tests</h3>
+              <p className="text-slate-600">Tests automatisés et audits de performance et sécurité</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Rocket className="text-white" size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-4">4. Déploiement</h3>
+              <p className="text-slate-600">Mise en production zero-downtime avec monitoring 24/7</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* CTA Section - Creative Style */}
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-600 via-pink-600 to-purple-700"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-10 right-10 w-96 h-96 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-full blur-3xl opacity-20"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-gradient-to-br from-pink-300 to-purple-400 rounded-full blur-3xl opacity-20"></div>
+        </div>
+        
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-3 rounded-2xl mb-8">
+            <Code2 className="text-white" size={20} />
+            <span className="font-bold text-sm">Solutions Tech</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
+            Prêt à Lancer Votre 
+            <br />
+            <span className="text-transparent bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text">
+              Projet Tech ?
+            </span>
+          </h2>
+          
+          <p className="text-xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
+            Transformons vos idées en plateforme e-commerce haute performance avec notre expertise technique et notre approche agile.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <a href="/ebusiness/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 font-bold rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200">
+              <Terminal className="mr-3" size={20} />
+              Demander un Devis Tech
+              <ArrowRight className="ml-3" size={20} />
+            </a>
+            <a href="https://startindev.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 backdrop-blur-sm text-white font-bold rounded-2xl hover:bg-white/10 transition-all duration-200">
+              <Rocket className="mr-3" size={20} />
+              Voir Nos Projets
+            </a>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-6 text-sm opacity-80">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span>Équipe dev disponible 7j/7</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Zap size={14} />
+              <span>Réponse sous 2h</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Shield size={14} />
+              <span>Sécurité garantie</span>
+            </div>
           </div>
         </div>
       </section>
