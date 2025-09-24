@@ -21,8 +21,8 @@ export default function Entertainment() {
       </div>
       {/* Hero Section */}
       <section className="relative pt-28 pb-16 text-white overflow-hidden">
-        {/* Background image with overlay */}
-        <div className="absolute inset-0 z-0 entertainment-gradient"></div>
+        {/* Background solid orange */}
+        <div className="absolute inset-0 z-0 bg-[#F2A541]"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl fade-in">
@@ -49,7 +49,7 @@ export default function Entertainment() {
       </section>
 
       {/* Consulting Overview */}
-      <section id="overview" className="py-24 bg-background">
+      <section id="overview" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="approach-title">
@@ -60,24 +60,24 @@ export default function Entertainment() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center fade-in stagger-1" data-testid="pillar-creativity">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Lightbulb className="text-2xl text-primary" size={28} />
+              <div className="bg-[#F2A541]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Lightbulb className="text-2xl text-[#F2A541]" size={28} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">Créativité</h3>
               <p className="text-muted-foreground">Des concepts innovants pour marquer les esprits</p>
             </div>
             
             <div className="text-center fade-in stagger-2" data-testid="pillar-technology">
-              <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Settings className="text-2xl text-secondary" size={28} />
+              <div className="bg-[#bf3100]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Settings className="text-2xl text-[#bf3100]" size={28} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">Technologie</h3>
               <p className="text-muted-foreground">Solutions techniques de pointe pour vos événements</p>
             </div>
             
             <div className="text-center fade-in stagger-3" data-testid="pillar-experience">
-              <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="text-2xl text-accent" size={28} />
+              <div className="bg-[#F2A541]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="text-2xl text-[#F2A541]" size={28} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">Expérience</h3>
               <p className="text-muted-foreground">Moments inoubliables pour votre audience</p>
@@ -98,40 +98,40 @@ export default function Entertainment() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card rounded-2xl p-8 shadow-lg border border-border card-hover" data-testid="solution-creation">
               <div className="flex items-center mb-4">
-                <Lightbulb className="text-2xl text-primary mr-3" size={28} />
+                <Lightbulb className="text-2xl text-[#F2A541] mr-3" size={28} />
                 <h3 className="text-xl font-bold text-foreground">Création d'événements</h3>
               </div>
               <p className="text-muted-foreground mb-4">De l'idée à la réalisation, nous créons vos événements sur mesure</p>
               <ul className="text-sm text-muted-foreground space-y-2">
-                <li className="flex items-center"><Check className="text-primary mr-2" size={16} />Conception et organisation sur mesure</li>
-                <li className="flex items-center"><Check className="text-primary mr-2" size={16} />Billetterie en ligne intégrée</li>
-                <li className="flex items-center"><Check className="text-primary mr-2" size={16} />Production photo et vidéo</li>
+                <li className="flex items-center"><Check className="text-[#F2A541] mr-2" size={16} />Conception et organisation sur mesure</li>
+                <li className="flex items-center"><Check className="text-[#F2A541] mr-2" size={16} />Billetterie en ligne intégrée</li>
+                <li className="flex items-center"><Check className="text-[#F2A541] mr-2" size={16} />Production photo et vidéo</li>
               </ul>
             </div>
 
             <div className="bg-card rounded-2xl p-8 shadow-lg border border-border card-hover" data-testid="solution-communication">
               <div className="flex items-center mb-4">
-                <Users className="text-2xl text-secondary mr-3" size={28} />
+                <Users className="text-2xl text-[#bf3100] mr-3" size={28} />
                 <h3 className="text-xl font-bold text-foreground">Communication Événementielle</h3>
               </div>
               <p className="text-muted-foreground mb-4">Stratégie de communication complète pour maximiser l'impact</p>
               <ul className="text-sm text-muted-foreground space-y-2">
-                <li className="flex items-center"><Check className="text-secondary mr-2" size={16} />Stratégie de communication globale</li>
-                <li className="flex items-center"><Check className="text-secondary mr-2" size={16} />Campagnes publicitaires (réseaux, Google Ads)</li>
-                <li className="flex items-center"><Check className="text-secondary mr-2" size={16} />Pages événementielles dédiées</li>
+                <li className="flex items-center"><Check className="text-[#bf3100] mr-2" size={16} />Stratégie de communication globale</li>
+                <li className="flex items-center"><Check className="text-[#bf3100] mr-2" size={16} />Campagnes publicitaires (réseaux, Google Ads)</li>
+                <li className="flex items-center"><Check className="text-[#bf3100] mr-2" size={16} />Pages événementielles dédiées</li>
               </ul>
             </div>
 
             <div className="bg-card rounded-2xl p-8 shadow-lg border border-border card-hover" data-testid="solution-digital">
               <div className="flex items-center mb-4">
-                <Globe className="text-2xl text-accent mr-3" size={28} />
+                <Globe className="text-2xl text-[#F2A541] mr-3" size={28} />
                 <h3 className="text-xl font-bold text-foreground">Solutions Digitales</h3>
               </div>
               <p className="text-muted-foreground mb-4">Outils numériques pour gérer et optimiser vos événements</p>
               <ul className="text-sm text-muted-foreground space-y-2">
-                <li className="flex items-center"><Check className="text-accent mr-2" size={16} />Mini-sites et landing pages événements</li>
-                <li className="flex items-center"><Check className="text-accent mr-2" size={16} />Outils de gestion et suivi</li>
-                <li className="flex items-center"><Check className="text-accent mr-2" size={16} />Analytics événementiels</li>
+                <li className="flex items-center"><Check className="text-[#F2A541] mr-2" size={16} />Mini-sites et landing pages événements</li>
+                <li className="flex items-center"><Check className="text-[#F2A541] mr-2" size={16} />Outils de gestion et suivi</li>
+                <li className="flex items-center"><Check className="text-[#F2A541] mr-2" size={16} />Analytics événementiels</li>
               </ul>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function Entertainment() {
       </section>
 
       {/* Key Features */}
-      <section id="features" className="py-24 bg-muted/20">
+      <section id="features" className="py-24 bg-[#F2A541]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="features-title">
@@ -149,24 +149,24 @@ export default function Entertainment() {
           
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center" data-testid="feature-registration">
-              <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <UserPlus className="text-primary" size={24} />
+              <div className="bg-[#F2A541]/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <UserPlus className="text-[#F2A541]" size={24} />
               </div>
               <h4 className="font-semibold text-foreground mb-2">Inscription en ligne</h4>
               <p className="text-sm text-muted-foreground">Gestion complète des participants</p>
             </div>
             
             <div className="text-center" data-testid="feature-qrcode">
-              <div className="bg-secondary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <QrCode className="text-secondary" size={24} />
+              <div className="bg-[#bf3100]/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <QrCode className="text-[#bf3100]" size={24} />
               </div>
               <h4 className="font-semibold text-foreground mb-2">QR Codes</h4>
               <p className="text-sm text-muted-foreground">Check-in rapide et sécurisé</p>
             </div>
             
             <div className="text-center" data-testid="feature-analytics">
-              <div className="bg-accent/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="text-accent" size={24} />
+              <div className="bg-[#F2A541]/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BarChart3 className="text-[#F2A541]" size={24} />
               </div>
               <h4 className="font-semibold text-foreground mb-2">Analytics temps réel</h4>
               <p className="text-sm text-muted-foreground">Statistiques et rapports</p>

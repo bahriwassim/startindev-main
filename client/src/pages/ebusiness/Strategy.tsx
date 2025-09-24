@@ -1,48 +1,32 @@
-import { Search, Target, TrendingUp, BarChart3, Globe, Zap, CheckCircle, ArrowRight, Users, ShoppingCart, DollarSign, LineChart, Briefcase, Award, Lightbulb, Star, Eye } from "lucide-react";
-import logo from "../../../../attached_assets/startindev-group.png";
+import { Search, Target, TrendingUp, BarChart3, Globe, Zap, CheckCircle, ArrowRight, Users, ShoppingCart, DollarSign, LineChart, Briefcase, Award, Lightbulb, Star, Eye, Rocket } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import EBusinessLayout from "../../components/EBusinessLayout";
 
 export default function EBusinessStrategy() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
-      {/* Navigation - Creative Style */}
-      <div className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-orange-200/50 z-50 shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-16 text-sm">
-            <a href="/" className="mr-6 flex items-center">
-              <img src={logo} alt="StartInDev" className="h-8 w-auto" />
-            </a>
-            <a href="/ebusiness" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Aperçu</a>
-            <a href="/ebusiness/strategie" className="px-4 py-2 text-orange-600 font-bold border-b-3 border-orange-500">Stratégie Marketing</a>
-            <a href="/ebusiness/contenu" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Création Contenu</a>
-            <a href="/ebusiness/tech" className="px-4 py-2 text-slate-600 hover:text-orange-600 transition-colors font-medium">Solutions Tech</a>
-            <a href="/ebusiness/contact" className="ml-auto px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium">Contact</a>
-          </div>
-        </div>
-      </div>
+    <EBusinessLayout currentPage="strategie">
+      <div className="min-h-screen bg-background">
 
       {/* Hero Section - Creative Asymmetric Layout */}
       <section className="relative pt-28 pb-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-orange-200 to-pink-200 rounded-full blur-3xl opacity-30"></div>
-          <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-br from-purple-200 to-orange-200 rounded-full blur-3xl opacity-30"></div>
-        </div>
+        <div className="absolute inset-0"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-3 space-y-8">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 bg-[#105740] rounded-2xl flex items-center justify-center shadow-lg">
                   <Target className="text-white" size={24} />
                 </div>
-                <div className="px-4 py-2 bg-orange-100 rounded-full">
-                  <span className="text-orange-700 font-semibold text-sm">Stratégie Marketing Pro</span>
+                <div className="px-4 py-2 bg-[#105740]/10 rounded-full">
+                  <span className="text-[#105740] font-semibold text-sm">Stratégie Marketing Pro</span>
                 </div>
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-black leading-tight">
                 <span className="text-slate-900">Stratégie Marketing</span>
                 <br />
-                <span className="text-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text">
+                <span className="text-[#105740]">
                   Data-Driven
                 </span>
               </h1>
@@ -52,16 +36,16 @@ export default function EBusinessStrategy() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-orange-200">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-[#105740]/30">
+                  <div className="w-2 h-2 bg-[#105740] rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium text-slate-700">ROAS garanti 4x</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-pink-200">
-                  <Zap size={14} className="text-orange-500" />
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-[#105740]/30">
+                  <Zap size={14} className="text-[#105740]" />
                   <span className="text-sm font-medium text-slate-700">Setup en 48h</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-purple-200">
-                  <Star size={14} className="text-pink-500" />
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-[#105740]/30">
+                  <Star size={14} className="text-[#105740]" />
                   <span className="text-sm font-medium text-slate-700">Expertise certifiée</span>
                 </div>
               </div>
@@ -69,15 +53,15 @@ export default function EBusinessStrategy() {
 
             <div className="lg:col-span-2">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-orange-300 to-pink-300 rounded-3xl blur-2xl opacity-20"></div>
+                <div className="absolute -inset-4 bg-[#105740] rounded-3xl blur-2xl opacity-10"></div>
                 <img 
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" 
                   alt="Stratégie marketing" 
                   className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-xl border border-orange-100">
+                <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-xl border border-[#105740]/20">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-500 rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 bg-[#105740] rounded-lg flex items-center justify-center">
                       <TrendingUp className="text-white" size={16} />
                     </div>
                     <div>
@@ -96,9 +80,9 @@ export default function EBusinessStrategy() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-100 to-pink-100 px-6 py-3 rounded-2xl mb-8">
-              <Target className="text-orange-600" size={20} />
-              <span className="text-orange-700 font-bold text-sm">Solutions Marketing</span>
+            <div className="inline-flex items-center gap-3 bg-[#105740]/10 px-6 py-3 rounded-2xl mb-8">
+              <Target className="text-[#105740]" size={20} />
+              <span className="text-[#105740] font-bold text-sm">Solutions Marketing</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
               Expertise Data-Driven
@@ -112,14 +96,14 @@ export default function EBusinessStrategy() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20">
             {/* Google Ads Section */}
             <div className="lg:col-span-7">
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8 lg:p-12 h-full">
+              <div className="bg-[#105740]/5 rounded-3xl p-8 lg:p-12 h-full">
                 <div className="flex items-start justify-between mb-8">
                   <div>
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+                      <div className="w-14 h-14 bg-[#105740] rounded-2xl flex items-center justify-center shadow-lg">
                         <Target className="text-white" size={24} />
                       </div>
-                      <div className="bg-orange-200 text-orange-800 px-4 py-2 rounded-full text-sm font-bold">
+                      <div className="bg-[#105740]/10 text-[#105740] px-4 py-2 rounded-full text-sm font-bold">
                         Acquisition Payante
                       </div>
                     </div>
@@ -133,7 +117,7 @@ export default function EBusinessStrategy() {
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   <div className="space-y-4">
                     <h4 className="font-bold text-slate-800 flex items-center gap-2">
-                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-[#105740] rounded-full"></div>
                       Google Ads Pro
                     </h4>
                     <div className="space-y-3 text-sm text-slate-600">
@@ -153,7 +137,7 @@ export default function EBusinessStrategy() {
                   </div>
                   <div className="space-y-4">
                     <h4 className="font-bold text-slate-800 flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pink-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-[#105740] rounded-full"></div>
                       Meta Business Suite
                     </h4>
                     <div className="space-y-3 text-sm text-slate-600">
@@ -173,18 +157,18 @@ export default function EBusinessStrategy() {
                   </div>
                 </div>
 
-                <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-200">
+                <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-green-200">
                   <div className="grid grid-cols-3 gap-6 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-orange-600 mb-1">4.2x</div>
+                      <div className="text-2xl font-bold text-[#105740] mb-1">4.2x</div>
                       <div className="text-sm text-slate-600">ROAS Moyen</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-orange-600 mb-1">-35%</div>
+                      <div className="text-2xl font-bold text-[#105740] mb-1">-35%</div>
                       <div className="text-sm text-slate-600">Réduction CPC</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-orange-600 mb-1">48h</div>
+                      <div className="text-2xl font-bold text-[#105740] mb-1">48h</div>
                       <div className="text-sm text-slate-600">Setup campagnes</div>
                     </div>
                   </div>
@@ -194,12 +178,12 @@ export default function EBusinessStrategy() {
 
             {/* Amazon Section */}
             <div className="lg:col-span-5">
-              <div className="bg-gradient-to-br from-pink-50 to-purple-100 rounded-3xl p-8 h-full">
+              <div className="bg-white rounded-3xl p-8 h-full border border-[#105740]/10">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 bg-[#105740] rounded-2xl flex items-center justify-center shadow-lg">
                     <ShoppingCart className="text-white" size={20} />
                   </div>
-                  <div className="bg-pink-200 text-pink-800 px-3 py-2 rounded-full text-sm font-bold">
+                  <div className="bg-[#105740]/10 text-[#105740] px-3 py-2 rounded-full text-sm font-bold">
                     Amazon Marketplace
                   </div>
                 </div>
@@ -212,7 +196,7 @@ export default function EBusinessStrategy() {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-bold text-slate-800 mb-3 flex items-center gap-2">
-                      <ShoppingCart className="text-pink-500" size={16} />
+                      <ShoppingCart className="text-[#105740]" size={16} />
                       Optimisation Marketplace
                     </h4>
                     <div className="space-y-2 text-sm text-slate-600">
@@ -223,10 +207,10 @@ export default function EBusinessStrategy() {
                     </div>
                   </div>
 
-                  <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-pink-200">
+                  <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-[#105740]/20">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-slate-600">Croissance ventes</span>
-                      <span className="font-bold text-pink-600">+180%</span>
+                      <span className="font-bold text-[#105740]">+180%</span>
                     </div>
                   </div>
                 </div>
@@ -235,14 +219,14 @@ export default function EBusinessStrategy() {
           </div>
 
           {/* SEO Section */}
-          <div className="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-3xl p-8 lg:p-12">
+          <div className="bg-[#105740]/5 rounded-3xl p-8 lg:p-12">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 bg-[#105740] rounded-2xl flex items-center justify-center shadow-lg">
                     <Search className="text-white" size={24} />
                   </div>
-                  <div className="bg-purple-200 text-purple-800 px-4 py-2 rounded-full text-sm font-bold">
+                  <div className="bg-[#105740]/10 text-[#105740] px-4 py-2 rounded-full text-sm font-bold">
                     SEO E-commerce
                   </div>
                 </div>
@@ -257,15 +241,15 @@ export default function EBusinessStrategy() {
                     <h4 className="font-bold text-slate-800 mb-4">SEO Technique</h4>
                     <div className="space-y-3 text-sm text-slate-600">
                       <div className="flex items-center gap-2">
-                        <Search className="text-purple-500" size={16} />
+                        <Search className="text-[#105740]" size={16} />
                         <span>Schema Markup E-commerce</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Zap className="text-pink-500" size={16} />
+                        <Zap className="text-[#105740]" size={16} />
                         <span>Core Web Vitals Optimization</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Globe className="text-purple-500" size={16} />
+                        <Globe className="text-[#105740]" size={16} />
                         <span>International SEO (hreflang)</span>
                       </div>
                     </div>
@@ -274,15 +258,15 @@ export default function EBusinessStrategy() {
                     <h4 className="font-bold text-slate-800 mb-4">Contenu & Liens</h4>
                     <div className="space-y-3 text-sm text-slate-600">
                       <div className="flex items-center gap-2">
-                        <Lightbulb className="text-orange-500" size={16} />
+                        <Lightbulb className="text-[#105740]" size={16} />
                         <span>Content Strategy avancée</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Star className="text-pink-500" size={16} />
+                        <Star className="text-[#105740]" size={16} />
                         <span>Digital PR & Brand Mentions</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Eye className="text-purple-500" size={16} />
+                        <Eye className="text-[#105740]" size={16} />
                         <span>Topic Authority Building</span>
                       </div>
                     </div>
@@ -290,23 +274,23 @@ export default function EBusinessStrategy() {
                 </div>
               </div>
 
-              <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-purple-200">
+              <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-[#105740]/20">
                 <h4 className="font-bold text-slate-800 mb-6 text-center">Performance SEO</h4>
                 <div className="grid grid-cols-2 gap-6 text-center">
                   <div>
-                    <div className="text-3xl font-bold text-purple-600 mb-2">+250%</div>
+                    <div className="text-3xl font-bold text-[#105740] mb-2">+250%</div>
                     <div className="text-sm text-slate-600">Trafic organique</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-pink-600 mb-2">Top 3</div>
+                    <div className="text-3xl font-bold text-[#105740] mb-2">Top 3</div>
                     <div className="text-sm text-slate-600">Position moyenne</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-orange-600 mb-2">85%</div>
+                    <div className="text-3xl font-bold text-[#105740] mb-2">85%</div>
                     <div className="text-sm text-slate-600">Keywords top 10</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-purple-600 mb-2">6 mois</div>
+                    <div className="text-3xl font-bold text-[#105740] mb-2">6 mois</div>
                     <div className="text-sm text-slate-600">Délai résultats</div>
                   </div>
                 </div>
@@ -319,30 +303,30 @@ export default function EBusinessStrategy() {
 
       {/* CTA Section - Creative Style */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-600 via-pink-600 to-purple-700"></div>
+        <div className="absolute inset-0 bg-[#105740]"></div>
         <div className="absolute inset-0">
-          <div className="absolute top-10 right-10 w-96 h-96 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-full blur-3xl opacity-20"></div>
-          <div className="absolute bottom-10 left-10 w-80 h-80 bg-gradient-to-br from-pink-300 to-purple-400 rounded-full blur-3xl opacity-20"></div>
+          <div className="absolute top-10 right-10 w-96 h-96 bg-gradient-to-br from-emerald-300 to-green-400 rounded-full blur-3xl opacity-20"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-gradient-to-br from-green-300 to-emerald-400 rounded-full blur-3xl opacity-20"></div>
         </div>
-        
+
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-3 rounded-2xl mb-8">
             <Target className="text-white" size={20} />
             <span className="font-bold text-sm">Stratégie Marketing</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
             Prêt à Multiplier
             <br />
-            <span className="text-transparent bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-emerald-300 to-green-300 bg-clip-text">
               Votre ROI ?
             </span>
           </h2>
-          
+
           <p className="text-xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
             Obtenez une analyse personnalisée de votre potentiel de croissance et un plan d'action sur mesure pour transformer vos performances marketing.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
             <a href="/ebusiness/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 font-bold rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200">
               <BarChart3 className="mr-3" size={20} />
@@ -371,7 +355,9 @@ export default function EBusinessStrategy() {
           </div>
         </div>
       </section>
-    </div>
+
+      </div>
+    </EBusinessLayout>
   );
 }
 

@@ -1,0 +1,13 @@
+# Remplacer le bouton Entertainment avec les couleurs orange
+              <Link href="/entertainment">
+                <Button className="bg-[#F2A541] text-white border-2 border-[#F2A541] rounded-2xl px-8 py-4 text-lg font-bold inline-flex items-center justify-center transition-all duration-300 hover:bg-[#bf3100] hover:text-white hover:border-[#bf3100] hover:shadow-2xl hover:-translate-y-1 hover:scale-105 mr-4" data-testid="hero-cta-entertainment">
+                  <Music className="mr-2" size={20} />
+                  Entertainment
+                </Button>
+              </Link>
+              <Link href="/hospitality">
+                <Button className="bg-[#8B5CF6] text-white border-2 border-[#8B5CF6] rounded-2xl px-8 py-4 text-lg font-bold inline-flex items-center justify-center transition-all duration-300 hover:bg-purple-700 hover:text-white hover:border-purple-700 hover:shadow-2xl hover:-translate-y-1 hover:scale-105" data-testid="hero-cta-hospitality">
+                  <Hotel className="mr-2" size={20} />
+                  Hospitality
+                </Button>
+              </Link>

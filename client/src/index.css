@@ -65,7 +65,7 @@
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(220, 90%, 8%) 0%, hsl(200, 100%, 25%) 50%, hsl(220, 90%, 12%) 100%);
+    background: linear-gradient(135deg, #105740 0%, #1a8a5e 50%, #105740 100%);
     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
   }
 
@@ -98,8 +98,15 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-primary-foreground border border-primary rounded-2xl px-8 py-4 font-semibold transition-all duration-300 hover:bg-secondary hover:border-secondary hover:shadow-xl hover:-translate-y-1 hover:scale-105;
+    @apply border border-[#105740] rounded-2xl px-8 py-4 font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-105;
+    background-color: #105740;
+    color: white;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary:hover {
+    background-color: #0d4533;
+    border-color: #0d4533;
   }
 
   .btn-secondary {
@@ -108,12 +115,42 @@
   }
 
   .ebusiness-gradient {
-    background: linear-gradient(135deg, hsl(220, 90%, 8%) 0%, hsl(200, 100%, 25%) 50%, hsl(43, 100%, 35%) 100%);
+    background: linear-gradient(135deg, #105740 0%, #1a8a5e 50%, #105740 100%);
     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
   }
 
   .entertainment-gradient {
     background: linear-gradient(135deg, hsl(280, 100%, 8%) 0%, hsl(300, 80%, 25%) 50%, hsl(340, 90%, 35%) 100%);
     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Blue text styles */
+  .text-blue-primary {
+    @apply text-blue-600;
+  }
+
+  .text-blue-secondary {
+    @apply text-blue-500;
+  }
+
+  .text-blue-light {
+    @apply text-blue-400;
+  }
+
+  .text-blue-hero {
+    @apply text-white drop-shadow-lg;
+  }
+
+  .text-blue-hero-subtitle {
+    @apply text-white/95 drop-shadow-md;
+  }
+
+  /* Green text styles */
+  .text-green-primary {
+    color: #105740;
+  }
+
+  .text-green-secondary {
+    color: #1a8a5e;
   }
 }

@@ -11,11 +11,11 @@ export default function EntertainmentCreation() {
             <a href="/" className="mr-6 flex items-center">
               <img src={logo} alt="StartInDev" className="h-8 w-auto" />
             </a>
-            <a href="/entertainment" className="px-4 py-2 text-gray-600 hover:text-purple-600 transition-colors font-medium">Aperçu</a>
-            <a href="/entertainment/creation" className="px-4 py-2 text-purple-600 font-bold border-b-2 border-purple-600">Création Événements</a>
-            <a href="/entertainment/communication" className="px-4 py-2 text-gray-600 hover:text-purple-600 transition-colors font-medium">Communication</a>
-            <a href="/entertainment/digital" className="px-4 py-2 text-gray-600 hover:text-purple-600 transition-colors font-medium">Digital</a>
-            <a href="/entertainment/contact" className="ml-auto px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium">Contact</a>
+            <a href="/entertainment" className="px-4 py-2 text-gray-600 hover:text-[#bf3100] transition-colors font-medium">Aperçu</a>
+            <a href="/entertainment/creation" className="px-4 py-2 text-[#F2A541] font-bold border-b-2 border-[#F2A541]">Création Événements</a>
+            <a href="/entertainment/communication" className="px-4 py-2 text-gray-600 hover:text-[#bf3100] transition-colors font-medium">Communication</a>
+            <a href="/entertainment/digital" className="px-4 py-2 text-gray-600 hover:text-[#bf3100] transition-colors font-medium">Digital</a>
+            <a href="/entertainment/contact" className="ml-auto px-6 py-3 bg-[#F2A541] text-white rounded-lg hover:bg-[#bf3100] transition-colors font-medium">Contact</a>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function EntertainmentCreation() {
       <section className="pt-28 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-6">
               <Sparkles className="text-white" size={32} />
             </div>
             
@@ -38,15 +38,15 @@ export default function EntertainmentCreation() {
 
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
-                <div className="text-2xl font-bold text-purple-600">500+</div>
+                <div className="text-2xl font-bold text-[#bf3100]">500+</div>
                 <div className="text-gray-600">Événements créés</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-purple-600">50K+</div>
+                <div className="text-2xl font-bold text-[#bf3100]">50K+</div>
                 <div className="text-gray-600">Participants ravis</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-purple-600">95%</div>
+                <div className="text-2xl font-bold text-[#bf3100]">95%</div>
                 <div className="text-gray-600">Satisfaction client</div>
               </div>
             </div>
@@ -70,25 +70,25 @@ export default function EntertainmentCreation() {
             {/* Conception & Design */}
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-[#F2A541] rounded-xl flex items-center justify-center mr-4">
                   <Palette className="text-white" size={24} />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900">Conception & Design</h3>
-                  <p className="text-purple-600 font-medium">Créativité sur mesure</p>
+                  <p className="text-[#bf3100] font-medium">Créativité sur mesure</p>
                 </div>
               </div>
               
               <div className="space-y-4">
-                <div className="border-l-4 border-purple-600 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Idéation & Concept</h4>
                   <p className="text-gray-600 text-sm">Brainstorming créatif, développement du thème unique et définition de l'expérience utilisateur complète.</p>
                 </div>
-                <div className="border-l-4 border-purple-400 pl-4">
+                <div className="border-l-4 border-[#bf3100] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Scénographie</h4>
                   <p className="text-gray-600 text-sm">Design d'espace, aménagement scénique et création d'ambiances immersives adaptées à votre vision.</p>
                 </div>
-                <div className="border-l-4 border-purple-300 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Identité Visuelle</h4>
                   <p className="text-gray-600 text-sm">Création d'une charte graphique événementielle, supports visuels et déclinaisons multicanal.</p>
                 </div>
@@ -98,25 +98,25 @@ export default function EntertainmentCreation() {
             {/* Production & Organisation */}
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-[#F2A541] rounded-xl flex items-center justify-center mr-4">
                   <Users className="text-white" size={24} />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900">Production & Organisation</h3>
-                  <p className="text-purple-600 font-medium">Coordination experte</p>
+                  <p className="text-[#bf3100] font-medium">Coordination experte</p>
                 </div>
               </div>
               
               <div className="space-y-4">
-                <div className="border-l-4 border-purple-600 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Gestion de Projet</h4>
                   <p className="text-gray-600 text-sm">Planification détaillée, coordination des équipes et suivi rigoureux de tous les aspects logistiques.</p>
                 </div>
-                <div className="border-l-4 border-purple-400 pl-4">
+                <div className="border-l-4 border-[#bf3100] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Sélection Venues</h4>
                   <p className="text-gray-600 text-sm">Recherche et négociation des lieux parfaits, gestion des contrats et optimisation des coûts.</p>
                 </div>
-                <div className="border-l-4 border-purple-300 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Prestataires</h4>
                   <p className="text-gray-600 text-sm">Réseau qualifié de partenaires, coordination technique et garantie qualité sur tous les services.</p>
                 </div>
@@ -126,9 +126,9 @@ export default function EntertainmentCreation() {
 
           {/* Additional Services */}
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-purple-300 transition-colors">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Ticket className="text-purple-600" size={24} />
+            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-[#bf3100] transition-colors">
+              <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Ticket className="text-white" size={24} />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Billetterie & Inscriptions</h3>
               <ul className="text-gray-600 text-sm space-y-2 text-left">
@@ -139,9 +139,9 @@ export default function EntertainmentCreation() {
               </ul>
             </div>
 
-            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-purple-300 transition-colors">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Camera className="text-purple-600" size={24} />
+            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-[#bf3100] transition-colors">
+              <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Camera className="text-white" size={24} />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Production Audiovisuelle</h3>
               <ul className="text-gray-600 text-sm space-y-2 text-left">
@@ -152,9 +152,9 @@ export default function EntertainmentCreation() {
               </ul>
             </div>
 
-            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-purple-300 transition-colors">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Music className="text-purple-600" size={24} />
+            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-[#bf3100] transition-colors">
+              <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Music className="text-white" size={24} />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Animation & Artistes</h3>
               <ul className="text-gray-600 text-sm space-y-2 text-left">
@@ -204,17 +204,17 @@ export default function EntertainmentCreation() {
       </section>
 
       {/* CTA Section - Simple */}
-      <section className="py-16 bg-purple-600">
+      <section className="py-16 bg-[#F2A541]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Prêt à créer votre événement ?
           </h2>
-          <p className="text-xl text-purple-100 mb-8">
+          <p className="text-xl text-white/90 mb-8">
             Discutons de votre projet et créons ensemble une expérience inoubliable.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/entertainment/contact" className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <a href="/entertainment/contact" className="bg-white text-[#bf3100] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Démarrer mon projet
             </a>
             <a href="https://startindev.com/portfolio-events" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">

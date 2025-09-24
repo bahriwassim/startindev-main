@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Rocket, ShoppingCart, Music, Hotel, ArrowRight } from "lucide-react";
+import { Rocket, ShoppingCart, Music, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "../assets/logo-icon.png";
 
@@ -23,21 +23,15 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/ebusiness">
-                <Button className="bg-[#105740] text-white border-2 border-[#105740] rounded-2xl px-8 py-4 text-lg font-bold inline-flex items-center justify-center transition-all duration-300 hover:bg-[#105740] hover:text-white hover:border-[#105740] hover:shadow-2xl hover:-translate-y-1 hover:scale-105 mr-4" data-testid="hero-cta-ebusiness">
+                <Button className="bg-[#105740] text-white border-2 border-[#105740] rounded-2xl px-8 py-4 text-lg font-bold inline-flex items-center justify-center transition-all duration-300 hover:bg-green-700 hover:text-white hover:border-green-700 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 mr-4" data-testid="hero-cta-ebusiness">
                   <ShoppingCart className="mr-2" size={20} />
                   E-Business
                 </Button>
               </Link>
               <Link href="/entertainment">
-                <Button className="bg-[#F2A541] text-white border-2 border-[#F2A541] rounded-2xl px-8 py-4 text-lg font-bold inline-flex items-center justify-center transition-all duration-300 hover:bg-[#bf3100] hover:text-white hover:border-[#bf3100] hover:shadow-2xl hover:-translate-y-1 hover:scale-105 mr-4" data-testid="hero-cta-entertainment">
+                <Button className="bg-[#105740] text-white border-2 border-[#105740] rounded-2xl px-8 py-4 text-lg font-bold inline-flex items-center justify-center transition-all duration-300 hover:bg-green-700 hover:text-white hover:border-green-700 hover:shadow-2xl hover:-translate-y-1 hover:scale-105" data-testid="hero-cta-entertainment">
                   <Music className="mr-2" size={20} />
                   Entertainment
-                </Button>
-              </Link>
-              <Link href="/hospitality">
-                <Button className="bg-[#2a2a72] text-white border-2 border-[#2a2a72] rounded-2xl px-8 py-4 text-lg font-bold inline-flex items-center justify-center transition-all duration-300 hover:bg-[#2a2a72] hover:text-white hover:border-[#2a2a72] hover:shadow-2xl hover:-translate-y-1 hover:scale-105" data-testid="hero-cta-hospitality">
-                  <Hotel className="mr-2" size={20} />
-                  Hospitality
                 </Button>
               </Link>
             </div>
@@ -57,7 +51,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* E-Commerce Card */}
             <div className="bg-card/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl card-hover fade-in stagger-1 border border-border/50" data-testid="card-ecommerce">
               <img
@@ -67,14 +61,14 @@ export default function Home() {
               />
               <div className="p-8">
                 <div className="flex items-center mb-4">
-                  <ShoppingCart className="text-2xl text-[#105740] mr-3" size={28} />
-                  <h3 className="text-2xl font-bold text-[#105740]">E-Business</h3>
+                  <ShoppingCart className="text-2xl text-primary mr-3" size={28} />
+                  <h3 className="text-2xl font-bold text-green-primary">E-Business</h3>
                 </div>
-                <p className="text-gray-600 mb-6 leading-relaxed" data-testid="ecommerce-description">
+                <p className="text-green-secondary mb-6 leading-relaxed" data-testid="ecommerce-description">
                   Votre partenaire e-commerce pour une croissance digitale réussie. Stratégie, contenu, technologie au service de votre boutique en ligne.
                 </p>
                 <Link href="/ebusiness">
-                  <Button className="bg-[#105740] hover:bg-[#105740] text-white inline-flex items-center" data-testid="button-ecommerce">
+                  <Button className="btn-primary inline-flex items-center" data-testid="button-ecommerce">
                     <ArrowRight className="mr-2" size={16} />
                     Explorer E-Business
                   </Button>
@@ -91,40 +85,16 @@ export default function Home() {
               />
               <div className="p-8">
                 <div className="flex items-center mb-4">
-                  <Music className="text-2xl text-[#F2A541] mr-3" size={28} />
-                  <h3 className="text-2xl font-bold text-[#F2A541]">Entertainment</h3>
+                  <Music className="text-2xl text-accent mr-3" size={28} />
+                  <h3 className="text-2xl font-bold text-green-primary">Entertainment</h3>
                 </div>
-                <p className="text-[#bf3100] mb-6 leading-relaxed" data-testid="entertainment-description">
+                <p className="text-green-secondary mb-6 leading-relaxed" data-testid="entertainment-description">
                   Votre partenaire pour dynamiser vos événements. Création, communication et solutions digitales pour valoriser vos projets événementiels.
                 </p>
                 <Link href="/entertainment">
-                  <Button className="bg-[#F2A541] hover:bg-[#bf3100] text-white inline-flex items-center" data-testid="button-entertainment">
+                  <Button className="btn-primary inline-flex items-center" data-testid="button-entertainment">
                     <ArrowRight className="mr-2" size={16} />
                     Découvrir Entertainment
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
-            {/* Hospitality Card */}
-            <div className="bg-card/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl card-hover fade-in stagger-3 border border-border/50" data-testid="card-hospitality">
-              <img
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400"
-                alt="Luxury hotel lobby with modern hospitality services"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-8">
-                <div className="flex items-center mb-4">
-                  <Hotel className="text-2xl text-[#2a2a72] mr-3" size={28} />
-                  <h3 className="text-2xl font-bold text-[#2a2a72]">Hospitality</h3>
-                </div>
-                <p className="text-[#2a2a72] mb-6 leading-relaxed" data-testid="hospitality-description">
-                  Solutions digitales innovantes pour l'hôtellerie et la restauration. Gestion, réservation et expérience client optimisées.
-                </p>
-                <Link href="/hospitality">
-                  <Button className="bg-[#2a2a72] hover:bg-[#2a2a72] text-white inline-flex items-center" data-testid="button-hospitality">
-                    <ArrowRight className="mr-2" size={16} />
-                    Explorer Hospitality
                   </Button>
                 </Link>
               </div>

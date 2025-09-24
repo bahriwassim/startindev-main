@@ -23,7 +23,7 @@ export default function Navigation() {
             <Link href="/" className="flex-shrink-0">
               <span className="text-2xl font-bold text-primary cursor-pointer flex items-center" data-testid="logo-link">
                 <Code className="mr-2" size={28} />
-                StartInDev Groupe
+                Start In Dev Group
               </span>
             </Link>
           </div>
@@ -45,7 +45,7 @@ export default function Navigation() {
               </Link>
             ))}
             <a
-              href="https://startindev.com"
+              href="https://Start In Dev.com"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
@@ -88,7 +88,7 @@ export default function Navigation() {
                 </Link>
               ))}
               <a
-                href="https://startindev.com"
+                href="https://Start In Dev.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-3 py-2 text-primary"

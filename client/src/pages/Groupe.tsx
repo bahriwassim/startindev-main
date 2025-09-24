@@ -10,7 +10,7 @@ export default function Groupe() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-12 text-sm overflow-x-auto">
             <a href="/" className="mr-4 flex items-center">
-              <img src={logo} alt="StartInDev" className="h-6 w-auto" />
+              <img src={logo} alt="Start In Dev" className="h-6 w-auto" />
             </a>
             <a href="#intro" className="px-3 py-2 text-muted-foreground hover:text-primary">Intro</a>
             <a href="#poles" className="px-3 py-2 text-muted-foreground hover:text-primary">Pôles</a>

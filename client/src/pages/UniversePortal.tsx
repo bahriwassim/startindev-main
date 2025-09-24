@@ -68,7 +68,7 @@ export default function UniversePortal() {
             <div className="flex items-center space-x-4">
               <Globe className="h-8 w-8 text-primary" />
               <div>
-                <h1 className="text-xl font-bold">StartInDev Universe</h1>
+                <h1 className="text-xl font-bold">Start In Dev Universe</h1>
                 <p className="text-xs text-muted-foreground">Portail des applications professionnelles</p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function UniversePortal() {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Univers StartInDev
+              Univers Start In Dev
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Découvrez notre écosystème complet d'applications professionnelles pour l'e-business et l'entertainment
@@ -246,7 +246,7 @@ export default function UniversePortal() {
                   Prêt à commencer ?
                 </h2>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Explorez nos applications et découvrez comment StartInDev peut transformer votre activité
+                  Explorez nos applications et découvrez comment Start In Dev peut transformer votre activité
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-gradient-to-r from-primary to-purple-600 hover:opacity-90">

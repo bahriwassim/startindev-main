@@ -11,11 +11,11 @@ export default function EntertainmentDigital() {
             <a href="/" className="mr-6 flex items-center">
               <img src={logo} alt="StartInDev" className="h-8 w-auto" />
             </a>
-            <a href="/entertainment" className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">Aperçu</a>
-            <a href="/entertainment/creation" className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">Création</a>
-            <a href="/entertainment/communication" className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors font-medium">Communication</a>
-            <a href="/entertainment/digital" className="px-4 py-2 text-blue-600 font-bold border-b-2 border-blue-600">Digital Solutions</a>
-            <a href="/entertainment/contact" className="ml-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">Contact</a>
+            <a href="/entertainment" className="px-4 py-2 text-gray-600 hover:text-[#bf3100] transition-colors font-medium">Aperçu</a>
+            <a href="/entertainment/creation" className="px-4 py-2 text-gray-600 hover:text-[#bf3100] transition-colors font-medium">Création</a>
+            <a href="/entertainment/communication" className="px-4 py-2 text-gray-600 hover:text-[#bf3100] transition-colors font-medium">Communication</a>
+            <a href="/entertainment/digital" className="px-4 py-2 text-[#F2A541] font-bold border-b-2 border-[#F2A541]">Digital Solutions</a>
+            <a href="/entertainment/contact" className="ml-auto px-6 py-3 bg-[#F2A541] text-white rounded-lg hover:bg-[#bf3100] transition-colors font-medium">Contact</a>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function EntertainmentDigital() {
       <section className="pt-28 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-6">
               <Monitor className="text-white" size={32} />
             </div>
             
@@ -38,15 +38,15 @@ export default function EntertainmentDigital() {
 
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
-                <div className="text-2xl font-bold text-blue-600">50+</div>
+                <div className="text-2xl font-bold text-[#bf3100]">50+</div>
                 <div className="text-gray-600">Apps développées</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-blue-600">99.9%</div>
+                <div className="text-2xl font-bold text-[#bf3100]">99.9%</div>
                 <div className="text-gray-600">Uptime</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-blue-600">100K+</div>
+                <div className="text-2xl font-bold text-[#bf3100]">100K+</div>
                 <div className="text-gray-600">Utilisateurs</div>
               </div>
             </div>
@@ -71,25 +71,25 @@ export default function EntertainmentDigital() {
             {/* Mobile & Web Applications */}
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-[#F2A541] rounded-xl flex items-center justify-center mr-4">
                   <Smartphone className="text-white" size={24} />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900">Applications & Plateformes</h3>
-                  <p className="text-blue-600 font-medium">Mobile & Web Development</p>
+                  <p className="text-[#bf3100] font-medium">Mobile & Web Development</p>
                 </div>
               </div>
               
               <div className="space-y-4">
-                <div className="border-l-4 border-blue-600 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Apps Événementielles</h4>
                   <p className="text-gray-600 text-sm">Applications mobiles dédiées avec programme interactif, networking, notifications push et intégration réseaux sociaux.</p>
                 </div>
-                <div className="border-l-4 border-blue-400 pl-4">
+                <div className="border-l-4 border-[#bf3100] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Plateformes Web</h4>
                   <p className="text-gray-600 text-sm">Sites événementiels responsives, systèmes de billetterie, espaces participants et interfaces d'administration.</p>
                 </div>
-                <div className="border-l-4 border-blue-300 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">PWA & Cross-Platform</h4>
                   <p className="text-gray-600 text-sm">Progressive Web Apps optimisées, compatibilité multi-device et synchronisation temps réel.</p>
                 </div>
@@ -99,25 +99,25 @@ export default function EntertainmentDigital() {
             {/* Interactive Technologies */}
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-[#F2A541] rounded-xl flex items-center justify-center mr-4">
                   <QrCode className="text-white" size={24} />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900">Expériences Interactives</h3>
-                  <p className="text-blue-600 font-medium">Engagement Digital</p>
+                  <p className="text-[#bf3100] font-medium">Engagement Digital</p>
                 </div>
               </div>
               
               <div className="space-y-4">
-                <div className="border-l-4 border-blue-600 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Solutions QR & NFC</h4>
                   <p className="text-gray-600 text-sm">Systèmes de check-in automatisés, accès contenus exclusifs et parcours utilisateur gamifiés.</p>
                 </div>
-                <div className="border-l-4 border-blue-400 pl-4">
+                <div className="border-l-4 border-[#bf3100] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Réalité Augmentée</h4>
                   <p className="text-gray-600 text-sm">Expériences AR immersives, filtres personnalisés et activations interactives pour engagement maximum.</p>
                 </div>
-                <div className="border-l-4 border-blue-300 pl-4">
+                <div className="border-l-4 border-[#F2A541] pl-4">
                   <h4 className="font-semibold text-gray-900 mb-2">Live Streaming & Hybrid</h4>
                   <p className="text-gray-600 text-sm">Solutions de diffusion en direct, événements hybrides et interactions virtuelles avancées.</p>
                 </div>
@@ -127,9 +127,9 @@ export default function EntertainmentDigital() {
 
           {/* Technical Services */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-blue-300 transition-colors">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Monitor className="text-blue-600" size={24} />
+            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-[#bf3100] transition-colors">
+              <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Monitor className="text-white" size={24} />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Systèmes de Gestion</h3>
               <ul className="text-gray-600 text-sm space-y-2 text-left">
@@ -141,9 +141,9 @@ export default function EntertainmentDigital() {
               </ul>
             </div>
 
-            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-blue-300 transition-colors">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="text-blue-600" size={24} />
+            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-[#bf3100] transition-colors">
+              <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-4">
+                <BarChart3 className="text-white" size={24} />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Analytics & Data</h3>
               <ul className="text-gray-600 text-sm space-y-2 text-left">
@@ -155,9 +155,9 @@ export default function EntertainmentDigital() {
               </ul>
             </div>
 
-            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-blue-300 transition-colors">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Monitor className="text-blue-600" size={24} />
+            <div className="text-center p-6 border border-gray-200 rounded-xl hover:border-[#bf3100] transition-colors">
+              <div className="w-16 h-16 bg-[#F2A541] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Monitor className="text-white" size={24} />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Infrastructure Cloud</h3>
               <ul className="text-gray-600 text-sm space-y-2 text-left">
@@ -171,23 +171,23 @@ export default function EntertainmentDigital() {
           </div>
 
           {/* Performance Stats */}
-          <div className="bg-blue-50 rounded-2xl p-8">
+          <div className="bg-[#F2A541]/10 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Performance Technique</h3>
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">99.9%</div>
+                <div className="text-3xl font-bold text-[#bf3100] mb-2">99.9%</div>
                 <div className="text-gray-600">Uptime garanti</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">&lt; 2s</div>
+                <div className="text-3xl font-bold text-[#bf3100] mb-2">&lt; 2s</div>
                 <div className="text-gray-600">Temps de chargement</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">100K+</div>
+                <div className="text-3xl font-bold text-[#bf3100] mb-2">100K+</div>
                 <div className="text-gray-600">Utilisateurs simultanés</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-[#bf3100] mb-2">50+</div>
                 <div className="text-gray-600">Apps développées</div>
               </div>
             </div>
@@ -278,17 +278,17 @@ export default function EntertainmentDigital() {
       </section>
 
       {/* CTA Section - Simple */}
-      <section className="py-16 bg-blue-600">
+      <section className="py-16 bg-[#F2A541]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Prêt à digitaliser votre événement ?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white/90 mb-8">
             Modernisons ensemble votre approche avec des solutions digitales innovantes.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/entertainment/contact" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <a href="/entertainment/contact" className="bg-white text-[#bf3100] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Découvrir nos solutions
             </a>
             <a href="https://startindev.com/portfolio-digital" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">

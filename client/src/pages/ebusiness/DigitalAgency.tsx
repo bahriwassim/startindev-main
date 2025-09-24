@@ -119,7 +119,7 @@ export default function DigitalAgency() {
       <header className="bg-gradient-to-r from-primary via-secondary to-accent text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <Badge className="mb-6 bg-white/20 text-white border-white/30">StartInDev Digital Agency</Badge>
+            <Badge className="mb-6 bg-white/20 text-white border-white/30">Start In Dev Digital Agency</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Votre partenaire digital
               <br />
@@ -364,7 +364,7 @@ export default function DigitalAgency() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-foreground mb-4">StartInDev Digital</h3>
+              <h3 className="font-bold text-foreground mb-4">Start In Dev Digital</h3>
               <p className="text-muted-foreground mb-4">
                 Votre agence digitale de référence depuis 2012
               </p>
@@ -401,7 +401,7 @@ export default function DigitalAgency() {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 StartInDev Digital Agency. Tous droits réservés.</p>
+            <p>&copy; 2025 Start In Dev Digital Agency. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
